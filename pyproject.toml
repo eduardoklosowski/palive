@@ -1,0 +1,24 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "palive"
+version = "0.0.1"
+description = "PulseAudio for Live"
+license = "MIT"
+authors = ["Eduardo Klosowski <eduardo_klosowski@yahoo.com>"]
+readme = "README.md"
+repository = "https://github.com/eduardoklosowski/palive"
+
+[tool.poetry.scripts]
+palive = "palive.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0"
+pulsectl = "^21.5"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9"
+isort = "^5.8"
